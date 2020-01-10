@@ -1,0 +1,436 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+.navbar {
+  /* min-height: 10vh; */
+	font-size: 1.8rem;
+  /* background: rgb(248, 237, 237); */
+  background: #fff;
+	padding-bottom: 1rem;
+	position: fixed;
+  width: 100%;
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.main-nav {
+	list-style-type: none;
+	display: none;
+}
+
+.nav-links,
+.logo {
+	text-decoration: none;
+	color: #333;
+}
+
+.main-nav li {
+	text-align: center;
+	margin: 1.8rem 0 1rem 2rem;
+}
+
+li a{
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}
+
+li a:hover{
+  color: #ca6d6d;
+}
+
+.logo {
+  font-family: 'Rochester', cursive;
+  color: #ca6d6d;
+	display: inline-block;
+  font-size: 3rem;
+  font-weight: 500;
+	margin-top: 1.8rem;
+	margin-left: 2rem;
+}
+
+.logo-position {
+	text-align: center;
+}
+
+.navbar-toggle {
+	position: absolute;
+	top: 0.8rem;
+	right: 2rem;
+	cursor: pointer;
+	font-size: 1.9rem;
+}
+
+.active {
+	display: block;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+	width: 2.5rem;
+	height: 0.2rem;
+	background-color: #000;
+	margin: 0.6rem 0;
+	transition: 0.4s;
+}
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-0.4rem, 0.7rem);
+	-webkit-transform: rotate(-45deg) translate(-0.4rem, 0.7rem);
+}
+.change .bar2 {
+	opacity: 0;
+}
+.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-0.5rem, -0.8rem);
+  -webkit-transform: rotate(45deg) translate(-0.5rem, -0.8rem);
+  
+} /*End of styling nav bar*/
+
+/*Styling sections starts here*/
+
+.hero{
+  min-height: 100vh;
+  background: url('./img/header-laptop.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h2{
+  color: #fff;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 2rem;
+}
+
+button{
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.6rem 1rem;
+  background: rgb(167, 223, 206);
+  font-size: 2.5rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.intro{
+  min-height: 50vh;
+  width: 90%;
+  margin: 3rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* min-height: 50vh; */
+}
+
+.intro img{
+  width: 100%;
+  height: 100%;
+}
+
+.intro-img{
+  flex: 1 1 40rem;
+  background: lightskyblue;
+}
+
+.intro-text{
+  background: #F6F5F1;
+  flex: 1 1 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 2rem;
+}
+
+.intro-text h1{
+  font-family: 'Rochester', cursive;
+  color: #333;
+  font-size: 4rem;
+}
+
+.intro-text h3{
+  padding: 0.2rem;
+}
+
+.intro-text p{
+  max-width: 50rem;
+  font-size: 1.8rem;
+  padding: 1rem 0 3rem 0;
+  
+  /* text-align: center; */
+}
+
+
+
+/****************************************/
+
+.our-projects{
+  min-height: 50vh;
+  width: 90%;
+  margin:auto;
+  background: #FF9861;
+  margin-bottom: 3rem;
+}
+
+.project-box{
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.our-projects h1{
+  font-size: 4.6rem;
+}
+
+.our-projects span{
+  color: #fff;
+}
+
+hr{
+  border: none;
+  border-bottom: 0.5rem solid #fff;
+  width: 7%;
+  margin: 3rem auto;
+}
+
+.project-box p{
+  max-width: 60rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.project-box a{
+  font-size: 1.8rem;
+  background-color: transparent;
+  border: 0.4rem solid rgba(0, 0, 0, 1);
+  border-radius: 0.8rem;
+  cursor: pointer;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.project-box a:hover{
+  background: #000;
+  color: #fff;
+}
+
+
+/***************/
+
+
+.ideas p{
+  max-width: 45rem;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.ideas-boxses{
+  min-height: 50vh;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  /* background: #F6F5F1; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lamp{
+  max-width: 40rem;
+  margin: 0 2rem 0 0;
+}
+
+.lamp img{
+  padding-left: 13rem;
+}
+
+#calender img{
+  padding-left: 15rem;
+  margin-bottom: 1rem;
+}
+
+.lamp h2{
+  padding-left: 15rem;
+  font-size: 2.5rem;
+  font-family: 'Rochester', cursive;
+  margin-bottom: 1.5rem;
+}
+
+.lamp p{
+  font-size: 1.7rem;
+  flex-wrap: wrap;
+}
+
+.join{
+  font-size: 1.5rem;
+  background: rgb(154,165,167);
+  color: #fff;
+  border: none;
+  padding:1rem;
+  cursor: pointer;
+  outline: none;
+  margin-left: 10rem;
+}
+
+.join:hover{
+  background: #B3633B;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+
+
+
+/*Styling sections ends here*/
+
+
+
+
+/*Mobile view screen starts here*/
+
+@media screen and (min-width: 768px) {
+	p {
+    font-size: 2rem;
+  }
+
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 0;
+		height: 7rem;
+		align-items: center;
+	}
+
+	.main-nav {
+		display: flex;
+		margin-right: 3rem;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	.main-nav li {
+		margin: 0;
+	}
+
+	.nav-links {
+		margin-left: 4rem;
+	}
+
+	.logo {
+		margin-top: 0;
+		margin-left: 2rem;
+	}
+	.navbar-toggle {
+		display: none;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .intro-text h1{
+    padding-top: 0.6rem;
+    font-size: 3rem;
+  }
+  .intro-text h3{
+    padding: 0.2rem;
+    font-size: 2rem;
+  }
+  
+  .intro-text p{
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+
+  .hero h2{
+    font-size: 2rem;
+  }
+  
+  button{
+    font-size: 1.5rem;
+  }
+
+  .logo{
+    font-size: 2.5rem;
+  }
+
+  li a{
+    font-size: 1.5rem;
+  }
+
+  .our-projects h1{
+    font-size: 3.6rem;
+  }
+  
+  .our-projects span{
+    color: #fff;
+  }
+  
+  
+  .project-box p{
+    max-width: 40rem;
+    font-size: 1.5rem;
+  }
+  
+  .project-box a{
+    font-size: 1.5rem;
+    border: 0.2rem solid rgba(0, 0, 0, 1);
+  }
+
+  .ideas p{
+    max-width: 35rem;
+    font-size: 1.5rem;
+  }
+
+
+  #calender img{
+    padding-left: 4.5rem;
+  }
+
+  .ideas-boxses img,
+  h2{
+    padding-left: 5rem;
+  }
+
+  .ideas-boxses h2{
+    padding-left: 4.5rem;
+  }
+
+  .lamp p{
+    font-size: 1.4rem;
+  }
+
+  .join{
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-left: 4rem;
+  }
+
+
+  
+}
+
+/*Mobile view screen ends here*/
