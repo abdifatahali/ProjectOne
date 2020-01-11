@@ -216,8 +216,7 @@ hr{
 
 .project-box p{
   max-width: 60rem;
-  text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 0.5rem;
 }
 
 .project-box a{
@@ -226,7 +225,7 @@ hr{
   border: 0.4rem solid rgba(0, 0, 0, 1);
   border-radius: 0.8rem;
   cursor: pointer;
-  padding: 1rem;
+  padding: 0.8rem;
   margin-bottom: 2rem;
 }
 
