@@ -244,6 +244,10 @@ hr{
   margin-bottom: 1.5rem;
 }
 
+.ideas p:nth-child(1){
+  text-align: center;
+}
+
 .ideas-boxses{
   min-height: 50vh;
   width: 90%;
