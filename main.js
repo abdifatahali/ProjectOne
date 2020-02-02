@@ -4,6 +4,7 @@ let navBarToggle = document.getElementById("js-navbar-toggle");
 navBarToggle.addEventListener("click", function () {
   mainNav.classList.toggle("active");
 });
+
 // toggle the menu bar
 function myFunction(toggleMenu) {
   toggleMenu.classList.toggle("change");
